@@ -9,13 +9,12 @@
  */
 int main(void)
 {
-	int n;
+	int n, lastDigit;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	
 	/* finding last digit */
-	int lastDigit;
 	
 	lastDigit = n % 10;
 
