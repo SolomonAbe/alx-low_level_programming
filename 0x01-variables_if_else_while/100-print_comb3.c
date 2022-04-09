@@ -11,7 +11,7 @@ int main(void)
 
 	while (i < 10)
 	{
-		while (j < 10)
+		for (j = 0 ;j < 10; j++)
 		{
 			putchar(48 + i);
 			putchar(48 + j);
@@ -20,7 +20,6 @@ int main(void)
 				putchar(',');
 				putchar(' ');
 			}
-			j++;
 		}
 		i++;
 	}
