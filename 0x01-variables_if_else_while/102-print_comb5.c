@@ -18,7 +18,7 @@ int main(void)
 				for (k = 0 ; k < 10 ; k++)
 				{
 					putchar(48 + i);
-					putchar(48 + i);
+					putchar(48 + j);
 					putchar(' ');
 					putchar(48 + j);
 					putchar(48 + k);
