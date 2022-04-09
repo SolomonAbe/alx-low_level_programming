@@ -13,11 +13,11 @@ int main(void)
 	{
 		for (j = 0 ; j < 10 ; j++)
 		{
-			if(i < j)
+			if (i < j)
 			{
 				putchar(48 + i);
 				putchar(48 + j);
-				if (i != 9 && j != 9)
+				if (j != 9)
 				{	
 					putchar(',');
 					putchar(' ');
