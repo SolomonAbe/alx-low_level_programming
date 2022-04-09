@@ -11,14 +11,17 @@ int main(void)
 
 	while (i < 10)
 	{
-		for (j = 0 ;j < 10; j++)
+		for (j = 0 ; j < 10 ; j++)
 		{
-			putchar(48 + i);
-			putchar(48 + j);
-			if (i != 9)
+			if(i<j)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(48 + i);
+				putchar(48 + j);
+				if (i != 9)
+				{	
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 		i++;
