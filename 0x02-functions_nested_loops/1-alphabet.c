@@ -1,10 +1,9 @@
 #include "main.h"
 
-/** 
- * progarm that prints alphabets in lower case
- *  
- * Retrun: 0 always
+/**
+ * print_alpahbet - print alphabets in lowercase
  * 
+ * Return: Always 0
  */
 void print_alphabet(void)
 {
