@@ -1,6 +1,5 @@
 #inculde "main.h"
 
-
 /**
  * print_times_table - print n times table starting with 0
  * @n: The character to print
