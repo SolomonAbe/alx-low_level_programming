@@ -1,7 +1,4 @@
-#include <stdio.h>
-
-/** function prototype */
-int _putchar(char c);
+#include "main.h"
 
 /**
  * main - Entry point
@@ -10,13 +7,13 @@ int _putchar(char c);
  */
 int main(void)
 {
-	char ch = '_putchar';
-	_putchar (ch);
+	char ch[] = "_putchar";
 
+	int i;
+	for (i = 0; i < 8; i++)
+	{
+		_putchar (ch[i]);
+	}
+	_putchar('\n');
 	return (0);
-}
-/** function definition */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
 }
