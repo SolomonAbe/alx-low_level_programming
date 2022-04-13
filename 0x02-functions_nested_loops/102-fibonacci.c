@@ -1,16 +1,25 @@
-#include "main.h"
-
-/**
- * fibonacci - calculate fibonacci numbers
- * @n: number to be passed to calculate fibonacci
- * Return: int
- */
-int fibonacci(int n)
+#include <stdio.h>
+int main()
 {
-	if (n == 0 || n == 1 || n == 2)
-		return (1);
-	else
-	{
-		return (fibonacci(n - 1) + fibonacci(n - 2));
-	}
+  int n, first = 0, second = 1, next, c;
+
+  printf("Enter the number of terms\n");
+  scanf("%d", &n);
+
+  printf("First %d terms of Fibonacci series are:\n", n);
+
+  for (c = 0; c < n; c++)
+  {
+    if (c <= 1)
+      next = c;
+    else
+    {
+      next = first + second;
+      first = second;
+      second = next;
+    }
+    printf("%d\n", next);
+  }
+
+  return 0;
 }
