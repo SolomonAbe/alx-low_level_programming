@@ -1,25 +1,24 @@
 #include <stdio.h>
+
+/**
+ * program that print the first Fibonacci series
+ */
 int main()
 {
-  int n, first = 0, second = 1, next, c;
+	int n = 50, first = 0, second = 1, next, c;
 
-  printf("Enter the number of terms\n");
-  scanf("%d", &n);
-
-  printf("First %d terms of Fibonacci series are:\n", n);
-
-  for (c = 0; c < n; c++)
-  {
-    if (c <= 1)
-      next = c;
-    else
-    {
-      next = first + second;
-      first = second;
-      second = next;
-    }
-    printf("%d\n", next);
-  }
-
-  return 0;
+	for (c = 0; c < n; c++)
+	{
+		if (c <= 1)
+			next = 1;
+		else
+		{
+			next = first + second;
+			first = second;
+			second = next;
+    		}
+    		printf("%d ,", next);
+  	}
+	printf("\n");
+	return 0;
 }
