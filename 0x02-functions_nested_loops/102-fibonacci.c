@@ -9,14 +9,19 @@ int main()
 
 	for (c = 3; c < n; c++)
 	{
-		if (c <= 1)
-			next = 1;
-		else
-		{
-			next = first + second;
-			first = second;
-			second = next;
-    		}
+		/**
+		*if (c <= 1)
+		*	next = 1;
+		*else
+		*{
+		*	next = first + second;
+		*	first = second;
+		*	second = next;
+    		*}
+		*/
+		next = first + second;
+		first = second;
+		second = next;
     		printf("%d ,", next);
   	}
 	printf("\n");
