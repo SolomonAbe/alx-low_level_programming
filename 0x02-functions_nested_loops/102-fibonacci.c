@@ -7,7 +7,7 @@ int main()
 {
 	int n = 50, first = 0, second = 1, next, c;
 
-	for (c = 0; c < n; c++)
+	for (c = 3; c < n; c++)
 	{
 		if (c <= 1)
 			next = 1;
