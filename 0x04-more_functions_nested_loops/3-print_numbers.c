@@ -3,15 +3,17 @@
 /**
  * print_numbers - print number
  * 
- * Return: null
+ * Return: always 0
  */
 void print_numbers(void)
 {
 	int i;
 	
-	for (i = 48; i < 58; i++)
+	i = 0;
+	while (i < 10)
 	{
-		_putchar(i);
+		_putchar(i + '0');
+		i++;
 	}
 	_putchar('\n');
 }
