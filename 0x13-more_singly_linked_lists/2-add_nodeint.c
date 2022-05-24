@@ -6,7 +6,7 @@
  * @n: The integer type data for the new node to contain.
  *
  * Return: If the function fails - NULL. 
- * 	Otherwise - the address of the new element.
+ * Otherwise - the address of the new element.
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
@@ -14,7 +14,9 @@ listint_t *add_nodeint(listint_t **head, const int n)
 
 	newNode = malloc(sizeof(listint_t));
 	if (newNode == NULL)
+	{
 		return (NULL);
+	}
 
 	newNode->n = n;
 	newNode->next = *head;
